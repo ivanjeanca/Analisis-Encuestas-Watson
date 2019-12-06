@@ -1,0 +1,20 @@
+{
+  "name": "analisis-encuestas-watson",
+  "version": "1.0.0",
+  "description": "Analisis emocional del texto con watson para la medición del impacto de comentarios en procesos de retroalimentación en recopilaciones masivas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Iv��n Jeancarlo Tirado Morales",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ibm-watson": "^5.2.0",
+    "nodemon": "^2.0.1"
+  }
+}

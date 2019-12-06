@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Analisis emocional del texto con Watson</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="container">
+    <br><br>
+    <h1 class="display-4 text-center" style="font-size: 30px;">Análisis emocional de texto con Watson para la medición del impacto de comentarios en procesos de retroalimentación en recopilaciones masivas</h1>
+    <hr>
+    <label for="comentarios" class="lead">Escribe los comentarios separados por un salto de línea:</label>
+    <textarea name="comentarios" id="comentarios" cols="30" rows="5" class="form-control"></textarea>
+    <br>
+    <button class="btn btn-success btn-block" onclick="analizar()">Analizar comentarios</button>
+    <hr class="my-4">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2 text-center" style="background-color: #eb4034; height:120px">
+            <br>
+            <p class="lead">Enojo</p>
+            <h3 id="txtEnojo"></h3>
+        </div>
+        <div class="col-sm-2 text-center" style="background-color: #fcff5e; height:120px">
+            <br>
+            <p class="lead">Disgusto</p>
+            <h3 id="txtDisgusto"></h3>
+        </div>
+        <div class="col-sm-2 text-center" style="background-color: #c95eff; height:120px">
+            <br>
+            <p class="lead">Miedo</p>
+            <h3 id="txtMiedo"></h3>
+        </div>
+        <div class="col-sm-2 text-center" style="background-color: #87e560; height:120px">
+            <br>
+            <p class="lead">Felicidad</p>
+            <h3 id="txtFelicidad"></h3>
+        </div>
+        <div class="col-sm-2 text-center" style="background-color: #5eafff; height:120px">
+            <br>
+            <p class="lead">Tristeza</p>
+            <h3 id="txtTristeza"></h3>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="analisis.js"></script>
+</body>
+</html>
